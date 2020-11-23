@@ -1,5 +1,20 @@
 # wireguard-iptables
 
+### Usage
+
+```
+sh setup.sh          # Apply the rules with defaults
+sh setup.sh -i=tun0  # Apply the rules with -inner=tun0
+```
+
+### Flags
+
+- `-i or --inner`: Inner interface, usually `wg0`. (Default: `wg0`)
+- `-o or --outer`: Outer interface, usually `eth0`. (Default: `eth0`)
+
+
+### Containes the following rules (with default flags)
+
 ```
 #Flush iptables
 iptables -F
