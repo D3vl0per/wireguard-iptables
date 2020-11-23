@@ -1,5 +1,8 @@
 # wireguard-iptables
 
+Apply set of iptable rules which make the server secure against any kind of attacks coming from an outer interface.
+**Disclaimer: If you don't have a working inner VPN setup, this script will ban you from your server.**
+
 ### Usage
 
 ```
